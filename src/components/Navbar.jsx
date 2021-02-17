@@ -9,15 +9,17 @@ const Navbar = (props) => {
       localStorage.removeItem("base64");
     }
     switch (e.target.value) {
+      case 1:
+        props.history.push("/logIn");
+        break;
       case 2:
         props.history.push("/signUp");
-        return;
+        break;
       case 3:
         props.history.push("/profile");
-        return;
+        break;
       default:
-        props.history.push("/logIn");
-        return;
+        break;
     }
   };
   return (
@@ -37,7 +39,7 @@ const Navbar = (props) => {
         <MenuItem onClick={handleClose} value='3'>
           My account
         </MenuItem>
-        <MenuItem onClick={handleClose} value='4'>
+        <MenuItem onClick={handleClose} value='1'>
           Logout
         </MenuItem>
       </Menu>

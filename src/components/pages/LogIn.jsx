@@ -29,7 +29,7 @@ const LogIn = (props) => {
   return (
     <Container maxWidth='md' style={{ minHeight: "100vh" }} className='pt-5'>
       <Paper elevation={3} className='mt-3 p-2 pt-5 d-flex flex-column align-items-center' style={{ minHeight: "60vh" }}>
-        <form autoComplete='off' onSubmit={logIn} onMouseDown={() => setError(false)}>
+        <form onSubmit={logIn} onMouseDown={() => setError(false)}>
           <TextField
             className='m-3 col-md-5'
             variant='outlined'

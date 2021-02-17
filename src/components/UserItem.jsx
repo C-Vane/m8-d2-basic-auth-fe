@@ -4,10 +4,10 @@ const UserItem = ({ user }) => {
   return (
     <Paper className='m-3 p-5 w-100'>
       <Grid container>
-        <Grid item xs={6}>
-          <img className='image fluid w-100' src={user.image} />
+        <Grid item sm={6} xs={3}>
+          <img className='image fluid w-50' src={user.image} />
         </Grid>
-        <Grid item xs={6} className='text-left pl-5'>
+        <Grid item sm={6} xs={9} className='text-left pl-sm-5'>
           <h4>Details</h4>
           <div className='d-flex flex-column'>
             <div className='d-flex justify-content-between p-2'>
